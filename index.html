@@ -2,94 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TaskNest – Organize Your Day</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
-      background: #f9fafb;
-      color: #333;
-      padding-bottom: 50px;
+      line-height: 1.6;
     }
     header {
-      background: #111827;
-      color: white;
+      background-color: #0e1628;
+      color: #fff;
       padding: 2rem;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    section {
+      padding: 2rem;
     }
-    .section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
+    h1, h2 {
+      color: #25363b;
     }
-    .section h2 {
-      color: #111827;
+    a {
+      color: #0077cc;
+      text-decoration: none;
     }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    input, textarea {
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 0.5rem;
-      font-size: 1rem;
-    }
-    button {
-      background: #2563eb;
-      color: white;
-      padding: 0.75rem;
-      border: none;
-      border-radius: 0.5rem;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #1d4ed8;
-    }
-    footer {
-      text-align: center;
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-    .logo {
-      width: 100px;
-      margin: 1rem auto;
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://i.imgur.com/PO7kGIX.png" alt="TaskNest Logo" class="logo" />
     <h1>TaskNest</h1>
     <p>Organize. Focus. Achieve.</p>
   </header>
 
-  <div class="section">
+  <section id="about">
     <h2>About TaskNest</h2>
-    <p>TaskNest is a sleek and simple task organizer designed to boost your productivity. Plan your day, keep track of your tasks, and achieve your goals without the clutter.</p>
-  </div>
+    <p>
+      TaskNest is a sleek and simple task organizer designed to boost your productivity. 
+      Plan your day, keep track of your tasks, and achieve your goals without the clutter.
+    </p>
+  </section>
 
-  <div class="section">
+  <section id="blog">
+    <h2>Latest Articles</h2>
+    <ul>
+      <li><a href="productivity-hacks-students.html">5 Productivity Hacks for Students</a></li>
+    </ul>
+  </section>
+
+  <section id="contact">
     <h2>Contact Us</h2>
     <form action="https://formspree.io/f/xjkwvnez" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required/>
-      <input type="email" name="email" placeholder="Your Email" required/>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
+      <input type="text" name="name" placeholder="Your name" required /><br />
+      <input type="email" name="email" placeholder="Your email" required /><br />
+      <textarea name="message" placeholder="Your message" required></textarea><br />
+      <button type="submit">Send</button>
     </form>
-  </div>
-
-  <footer>
-    &copy; 2025 TaskNest. All rights reserved.
-  </footer>
+  </section>
 </body>
 </html>
