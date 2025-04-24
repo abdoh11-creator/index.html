@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TaskNest – Organize Your Day</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #f9fafb;
+      color: #333;
+      padding-bottom: 50px;
+    }
+    header {
+      background: #111827;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .section h2 {
+      color: #111827;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1d4ed8;
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    .logo {
+      width: 100px;
+      margin: 1rem auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/PO7kGIX.png" alt="TaskNest Logo" class="logo" />
+    <h1>TaskNest</h1>
+    <p>Organize. Focus. Achieve.</p>
+  </header>
+
+  <div class="section">
+    <h2>About TaskNest</h2>
+    <p>TaskNest is a sleek and simple task organizer designed to boost your productivity. Plan your day, keep track of your tasks, and achieve your goals without the clutter.</p>
+  </div>
+
+  <div class="section">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xjkwvnez" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required/>
+      <input type="email" name="email" placeholder="Your Email" required/>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 TaskNest. All rights reserved.
+  </footer>
+</body>
+</html>
